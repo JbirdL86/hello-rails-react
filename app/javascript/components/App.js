@@ -7,6 +7,8 @@ import HelloWorld from './HelloWorld'
 import configureStore from "../configureStore"
 import { Provider } from "react-redux"
 
+const store = configureStore();
+
 class App extends React.Component {
   render () {
     return (

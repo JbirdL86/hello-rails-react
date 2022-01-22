@@ -12,7 +12,6 @@ const initialState = {
 };
 
 function rootReducer(state, action) {
-  console.log(action.type)
   switch (action.type) {
     case 'GET_THINGS_SUCCESS':
       return action.json.greetings[Math.floor(Math.random() * 8)];

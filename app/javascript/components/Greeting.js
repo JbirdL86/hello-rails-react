@@ -7,7 +7,6 @@ const Greeting = () => {
   const greeting = useSelector((state) => state);
 
   function getGreetings () {
-    console.log('getThings() Action!!');
     return dispatch => {
       dispatch({ type: 'GET_THINGS_REQUEST' });
       return fetch('v1/things.json')
